@@ -33,8 +33,9 @@ body {
 
 /* Fazendo isso para pegar o radio button selecionado pegando o irmão dele que e a label */
 .rd-tabs:checked ~ label{
-    background-color: #e54e43;
+    /* background-color: #e54e43; */
     transition: all .2s ease-in;
+    background: linear-gradient(to bottom, #e54e43 90%, rgba(54, 62, 72, 0.64) 95%);
 }
 
 .rd-tabs {
@@ -42,7 +43,7 @@ body {
 }
 
 .content {
-    border-top: 5px solid #e54e43;
+    /* border-top: 5px solid #e54e43; */
     background-color: #fff;
     display: none;
     position: absolute;
