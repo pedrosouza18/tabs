@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ddd;
+    font-family: Arial;
+}
+
+.nav-tabs {
+    background-color: #fff;
+    position: relative;
+}
+
+.nav-tabs ul {
+    list-style: none;
+    display: flex
+}
+
+.nav-tabs ul li {
+    flex: 1
+}
+
+.nav-tabs label {
+    padding: 25px;
+    background-color: #363b48;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Fazendo isso para pegar o radio button selecionado pegando o irmão dele que e a label */
+.rd-tabs:checked ~ label{
+    background-color: #e54e43;
+    transition: all .2s ease-in;
+}
+
+.rd-tabs {
+    display: none;
+}
+
+.content {
+    border-top: 5px solid #e54e43;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.rd-tabs:checked ~ .content{
+    display: block;
+}
+
+.content article {
+    padding: 10px;
+}
